@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        .num{
+            text-align: right;
+        }
+        table{
+            width: 500px;
+            border-collapse:collapse;
+
+        }
+        td, th{
+            height: 3px;
+            border: 1.5px solid black;
+        }
+        thead{
+            background-color: rgba(79, 77, 77, 0.708);
+            color: white;
+        }        
+        tfoot{
+        background-color: rgba(79, 77, 77, 0.708);
+        color: white;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas grandes</title>
+</head>
+<body>
+    <h1>uso de tabelas grandes</h1>
+    <table>
+ <thead>
+<th>estdo</th>
+<th>população</th>
+ </thead>
+ <tbody>
+<tr>
+    <td>sp</td>
+    <td class="num">21,2</td>
+    <tr>
+        <td>mj</td>
+        <td class="num">10.1</td>
+    </tr>
+    <tr>
+        <td>rj</td>
+        <td class="num">8,2</td>
+    </tr>
+</tr>
+ </tbody>
+ <tbody>
+
+ </tbody>
+ <tfoot>
+    <th>total de habitantes</th>
+    <td class="num"><strong>39,4</strong></td>
+ </tfoot>
+    </table>
+</body>
+</html>
