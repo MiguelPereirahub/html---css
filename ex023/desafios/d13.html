@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        .dado{
+            background-color: lightgrey;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+        th, td{
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        table{
+            width: 400px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        tbody  :nth-child(4n){
+            background-color: lightgrey;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 13</title>
+</head>
+<body>
+    <table>
+        <tbody>
+        <!--<thead>-->
+                <td class="dado">1</td>
+                <td class="dado">2</td>
+                <td rowspan="2" class="dado">3</td>
+                <td class="dado">4</td>
+        <!--</thead>-->
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td colspan="3">8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td rowspan="2">10</td>
+                <td colspan="2">11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
