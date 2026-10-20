@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style> body{ background-color: lightgrey; } </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <a href="#" onclick="clicou(event)">me clique</a>
+    
+    <div id="saida"></div>
+
+    <script>
+        function clicou(event) {
+            event.preventDefault(); 
+            
+            const s = window.document.getElementById("saida");
+            s.innerHTML += '<p>voce me clicou</p>';
+        }
+    </script>
+</body>
+</html>
