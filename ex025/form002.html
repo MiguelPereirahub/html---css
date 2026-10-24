@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <style>
+        body > p {
+            padding: 20px;
+        }
+        p,h1{
+            color: white;
+        }
+        form{
+            padding: 5px;
+            color: black;
+            height: 110px;
+            width: 400px;
+            text-align: center;
+            margin: auto;
+            border: 2px solid white;
+            border-radius:15px ;
+        }
+        .enviar{
+            text-align: right;
+        }
+        .enviar2{
+            text-align: left;
+        }
+        body{
+            background-color: #000;
+        }
+        ::-webkit-scrollbar{
+            border: lightgrey;
+            background-color: black;
+            width: 5px;
+            height: 0px;
+        }
+        ::-webkit-scrollbar-button{
+            width: 0px;
+            height: 0px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background:white;
+            border: 1px solid white;
+        }
+        ul{
+            background-color: white;
+        }
+
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>teste de formulario</h1>
+    <form action="" method="post" autocomplete="on">
+<p>
+    <label for="nome">
+        nome*
+    </label>
+    <input id="nome" type="text" required minlength="5" maxlength="15" autocomplete="username">
+</p>
+<p>
+    <label for="senha">
+        senha*
+    </label>
+    <input id="senha" type="password" required min="5" maxlength="15" autocomplete="new-password">
+</p>
+
+
+        <input type="submit" class="enviar" value="enviar"> 
+        <input type="reset" class="enviar2" value="limpar">
+
+
+
+
+    </form>
+</body>
+</html>
