@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+            <style>
+        legend{
+            color: white;
+            text-align: left;
+                }
+        div{
+            border: 6px double white;
+            border-radius:15px;
+            background-color: transparent;
+            position:absolute;                                                  width: 30%;
+            height: 3%;
+            padding: 8px;
+            bottom: 0px;
+            right: 5px;
+        }
+        .button{
+            font-size: 8px;
+            width: 30%;
+            padding: 5px;
+                }
+        input{
+            width: 90%;
+
+        }
+        body > p {
+            padding: 0px;
+            text-align: left;
+        }
+        p,h1{
+            color: white;
+            text-align: left;
+        }
+        form{ 
+            padding: 5px;
+            color: black;
+            height: 450px;
+            text-align: center;
+            margin: auto;
+            border: 2px solid white;
+            border-radius:15px ;
+        }
+        .enviar{
+            text-align: right;
+        }
+        .enviar2{
+            text-align: left;
+        }
+        body{
+            background-color: #000;
+        }
+        ::-webkit-scrollbar{
+            border: lightgrey;
+            background-color: black;
+            width: 5px;
+            height: 0px;
+        }
+        ::-webkit-scrollbar-button{
+            width: 0px;
+            height: 0px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background:white;
+            border: 1px solid white;
+        }
+        ul{
+            color: white;
+        }
+
+        </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form action="hello.py" method="post"  autocomplete="on">
+        <label for="nome">
+            <p>nome:</p><input type="text" name="" id="nome" required minlength="5" maxlength="15" autocomplete="nickname" placeholder="Nome de usuario">
+        </label>
+        <label for="senha">
+            <p>Senha:</p>
+            <input type="password" name="" id="senha"
+            minlength="10" maxlength="20" placeholder="Sua senha">
+        </label>
+        <label for="tel">
+            <fieldset>
+                <legend>dados de comunicaçao</legend>
+                <p>telefone:</p>
+                <input minlength="11" maxlength="12"   value="(99) 9999-999999"
+                type="tel"id="tel" required autocomplete="tel"  placeholder="Seu numero"  pattern="^\([0-9]{2})\[0-9]{6}-[0-9]{6}$">
+                        </label>
+                        <label for="email">
+                <p>email:</p>
+                <input type="email" name="" id="email" required autocomplete="email" value="exemple@hotmail.com" placeholder="Seu email">      
+                        </label>
+            </fieldset>
+        <div><input type="submit" value="enviar" class="button"> <input type="reset" value="reset" class="button"></div>
+    </form>
+</body>
+</html>
