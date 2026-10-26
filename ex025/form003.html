@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+            <style>
+        body > p {
+            padding: 0px;
+            text-align: left;
+        }
+        p,h1{
+            color: white;
+            text-align: left;
+        }
+        form{
+            padding: 5px;
+            color: black;
+            height: 450px;
+            width: 300px;
+            text-align: center;
+            margin: auto;
+            border: 2px solid white;
+            border-radius:15px ;
+        }
+        .enviar{
+            text-align: right;
+        }
+        .enviar2{
+            text-align: left;
+        }
+        body{
+            background-color: #000;
+        }
+        ::-webkit-scrollbar{
+            border: lightgrey;
+            background-color: black;
+            width: 5px;
+            height: 0px;
+        }
+        ::-webkit-scrollbar-button{
+            width: 0px;
+            height: 0px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background:white;
+            border: 1px solid white;
+        }
+        ul{
+            color: white;
+        }
+
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>teste de formulario</h1>
+    <form action="hello.py" method="post" autocomplete="on">
+        <ul>
+    <li>
+       <label for="nome">
+        <p>Nome*</p>
+         <input
+         type="text" name="nome" id="nome" minlength="5" maxlength="15" required size="15" placeholder="nome de usuario"  autocomplete="nickname"></label>
+    </li>
+</ul>
+<ul>
+    <li>
+        <label for="Media-do-aluno">
+        <p>Media do aluno</p>
+        <input id="Media-do-aluno" type="number" placeholder="media" min="1"  max="10" required step="0.2" value="5">
+       </label> 
+    </li>
+</ul>
+<ul>
+    <li>
+        <label for="tempo">
+            <p>periodo letivo</p>
+            <input type="month" required id="tempo" autocomplete="bday-month" value="2026-10">
+        </label>
+    </li>
+</ul>
+<ul>
+    <li>
+        <label for="dia">
+            <p>dia p/ prova</p>
+            <input type="date"   name="" id="dia" required placeholder="data">
+        </label>
+        </li>
+</ul>
+<ul>
+    <li>
+        <label for="hora"><p>horario da prova</p></label>
+        <input type="time" name="" id="hora" >
+    </li>
+</ul>
+<ul>
+    <li>
+       <label for="senha">
+        <p>senha*</p>
+         <input
+          type="password" name="senha" id="senha" minlength="10" maxlength="20" required size="10" placeholder="senha de login" autocomplete="current-password"></label>
+    </li>
+</ul>
+<br>
+<input type="submit" value="enviar"> <input type="reset" value="refresh">
+
+    </form>
+</body>
+</html>
