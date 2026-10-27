@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <style>
+        select{
+            color: white;
+            background-color: black;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>novas tags</title>
+</head>
+<body>
+    <form action="hello.py" method="post" autocomplete="on">
+        <p>
+            <label for="est">seu estado
+                <select name="" id="est">
+                    <option selected value="">--selecione-1---</option>
+                        <optgroup label="sudeste">
+                            <option value="Rj">Rio de Janeiro</option>
+                            <option value="SP">Sao Paulo</option>
+                        </optgroup>
+                        <optgroup label="nordeste">
+                            <option value="AM">Amapa</option>
+                            <option value="CE">Ceara</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="MA">Maranhao</option>
+                        </optgroup>
+
+                </select>
+            </label>
+        </p>
+        <p>
+            <label for="prof">
+                sua profissão
+                <br>
+                <input placeholder="se n tivel abaixo digite :-)" type="text" name="" id="lista" list="lista">
+                <datalist id="lista">
+                    <option value="">administrador</option>
+                    <option value="">contabilista</option>
+                    <option value="">desenvolvedor</option>
+                </datalist>
+            </label>
+            <br>
+            <br>
+            <label for="iprof">
+                    selecione
+                    <br>
+                    <select name="" id="iprof">
+                        <option value="">---selecione--</option>
+                        <optgroup label="TI">
+                            <option value="p">proramador</option>
+                        </optgroup>
+                        <optgroup label="T Manual">
+                            <option value="p">pedreiro</option>
+                        </optgroup>
+                    </select>
+                </label>
+        </p>
+        <p>
+            <label for="mensagem">mensagem</label>
+            <br>
+            <textarea name="" id="mensagem" cols="50" rows="20"></textarea>
+        </p>
+        <p><input type="submit" value="enviar" ><input type="reset" value="apagar"></p>
+    </form>
+</body>
+</html>
