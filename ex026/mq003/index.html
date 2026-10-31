@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media features</title>
+   <style>
+    /*declarações gerais*/
+
+
+        *{
+            color: #ffffff;
+            font-family: Arial Black, Helvetica, sans-serif;
+            margin:0px;
+            padding: 0px;
+        }
+        body{
+            width: 90vw;
+            height: 100vh;
+            background-color: white;/*#233Eff*/
+        }
+
+        ::-webkit-scrollbar{
+            width: 0px;
+            height: 0px; 
+        }
+        p{
+            padding-top: 30px; 
+            text-indent: 15px;
+            max-width: 50%;
+            margin: auto;
+        }
+        h1{
+            text-align: left;
+            text-shadow:3px 3px 3px rgb(19, 19, 185);
+        }
+            @media screen and (orientatio:portrait) {
+
+            
+
+            body{
+                background-image: url("cev-portrait.jpg");
+                background-position:left bottom;
+                background-size:contain;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+      
+        }
+            @media screen and (orientation: landscape) {
+                
+            
+
+        body{
+            background-image: url("cev-landscape.jpg");
+            background-position:left bottom;
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    }
+</style>
+</head>
+<body>
+    <h1>mude a orientação do seu celular</h1>
+  
+</body>
+</html>
