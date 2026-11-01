@@ -3,11 +3,20 @@
 /*media queries*/
 
 @media screen and (min-width:1200px) {
+        ul{
+            display: flex;
+            padding: 0px;
+        }
         header{
             width:98vw;
         }
         p{
-            max-width: 60vw;
-            margin: auto;
+            padding: 20px;
+            margin: 9px;
+            max-width: 40vw;
+        }
+        article{
+            position: absolute;
+            left:25%;
         }
 }
