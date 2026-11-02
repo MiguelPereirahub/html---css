@@ -2,7 +2,7 @@
 
 /*media queries*/
 
-@media screen and (min-width:390px)/* and (max-width:1200px)*/ {
+@media screen and (min-width:450px)/* and (max-width:1200px)*/ {
         ::-webkit-scrollbar{
             width: 5px;
             height: 0px;
@@ -35,8 +35,11 @@
             transform: translate(-50%);
             position: absolute;
         }
-        menu{
+        #menu{
             margin: auto;
             display:none;
+        }
+        #item{
+            display: block;
         }
     }
