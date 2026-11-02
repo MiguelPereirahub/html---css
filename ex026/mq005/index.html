@@ -10,14 +10,15 @@
         <body>
                 <header>
                         <h1>Meu Site</h1>
-                        <menu>
-                                <ul>
-                                    <li><a href="#">Opção-1</a></li>
-                                    <li><a href="#">Opção-2</a></li>
-                                    <li><a href="#">Opção-3</a></li>
-                                    <li><a href="#">Opção-4</a></li>
-                                    <li><a href="#">Opção-5</a></li>
-                                </ul>
+                        <a id="menu"  onclick="clickMenu()"><img src="menu-aberto.png" alt="" width="20px" height="20px"></a>
+                        <menu id="item">
+                        <ul>
+                            <li><a href="#">Opção-1</a></li><br><br>     
+                            <li><a href="#">Opção-2</a></li><br><br>
+                            <li><a href="#">Opção-3</a></li><br><br>
+                            <li><a href="#">Opção-4</a></li><br><br>
+                            <li><a href="#">Opção-5</a></li><br><br>
+                        </ul>
                         </menu>
                 </header>
                     <main>
@@ -29,5 +30,14 @@
                                 <p>O uso da tecnologia também provoca debates filosóficos onde se discute se a tecnologia melhora a condição humana ou a piora. O Neoludismo, Anarco-primitivismo e outros movimentos reacionários similares criticam a difusão da tecnologia, argumentando que ela prejudica o meio ambiente e aliena pessoas. Já os proponentes de ideologias como o Transumanismo e o Tecnoprogressivismo enxergam o progresso tecnológico contínuo como benéfico para a sociedade e para a condição humana.</p>
                             </article>
                     </main>
+                <script>
+                    function clickMenu(){
+                        if (item.style.display == 'block' )  {
+                            item.style.display = 'none'
+                        } else {
+                            item.style.display = 'block'
+                        }                  
+                    }
+                </script>
         </body>
     </html>
