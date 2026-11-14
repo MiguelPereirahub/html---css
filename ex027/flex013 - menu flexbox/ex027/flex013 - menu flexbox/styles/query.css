@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 
-        @media  screen and (min-width:700px) {
+        @media  screen and (min-width:550px) {
         .opções{
             flex-flow: column nowrap;
         }
         .filho{
-            height: 50px;
+            font-size: 1em;
             margin: 1px;
             background-color: rgb(120, 120, 120);
 
@@ -24,21 +24,16 @@
             background-color: rgb(64, 64, 64);
             transition: background-color 0.9s;
         }
-        article{
-            width: 97vw;
-            top: 110px;
-            position: absolute;
-        }
         .conteudo{
+            margin: auto;
             max-width: 500px;
             text-align:justify;
             text-indent: 10px;
             text-align: left;
-            color: black;
         }
 
         }
-                @media  screen and (min-width:800px)and (max-width:1200px) {
+                @media  screen and (min-width:800px) {
         article{
             width: 97vw;
             top: 100px;
@@ -48,7 +43,6 @@
             text-align:justify;
             text-indent: 10px;
             text-align: left;
-            color: black;
         }
 
         .opções{
