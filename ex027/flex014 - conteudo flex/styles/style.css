@@ -8,6 +8,7 @@
     margin: 0px;
 }
 body{
+    scrollbar-width: 0px;
     line-height: 1.5em;
     font-size:1em;
 }
@@ -22,6 +23,34 @@ header,.normal{
     background-color: lightgrey;
 }
 .flex-content{
+    flex-flow: column nowrap;
+    display: flex;
     padding:10px;
     background-color: lightgrey;
+}
+.text-media{
+    justify-content: space-between;
+    display: flex;
+    flex-flow:row wrap ;
+}
+.media-text{
+    justify-content: space-between;
+    display: flex;
+    flex-flow: row wrap-reverse; 
+}
+.text{
+    flex: 1  1 500px;
+}
+.media{
+    flex:1 0 300px;
+}
+img{
+    display: block;
+    margin:auto;
+}
+iframe{
+    width: 90%;
+    display: block;
+    margin:auto;
+    margin:0 20px;
 }
